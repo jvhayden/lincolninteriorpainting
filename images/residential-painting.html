@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential Painting Lincoln NE | Home Painters in Lincoln</title>
+<meta name="description" content="Professional residential painting in Lincoln, NE. Licensed home painters serving Lancaster County homeowners. Interior, trim & cabinet painting. Free estimates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #fff; }
+
+  /* NAV */
+  .lip-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; border-bottom: 1px solid #e5e7eb; background: #fff; position: sticky; top: 0; z-index: 100; }
+  .lip-nav-left { display: flex; align-items: center; gap: 1.5rem; }
+  .lip-nav-phone-wrap { display: flex; flex-direction: column; line-height: 1.1; }
+  .lip-nav-phone-label { font-size: 11px; font-weight: 600; color: #8aa4be; text-transform: uppercase; letter-spacing: 0.05em; }
+  .lip-nav-phone { font-size: 26px; font-weight: 800; color: #4a5f7c; text-decoration: none; white-space: nowrap; }
+  .lip-nav-phone:hover { color: #2c3e52; }
+  .lip-nav-links { display: flex; gap: 0; align-items: center; }
+  .lip-nav-links a { font-size: 13px; color: #4a5f7c; text-decoration: none; font-weight: 500; padding: 0.5rem 0.85rem; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+  .lip-nav-links a:hover { background: #e8edf2; color: #2c3e52; }
+  .lip-nav-links a.active { background: #e8edf2; color: #2c3e52; font-weight: 700; }
+  .lip-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; border: none; background: none; }
+  .lip-hamburger span { display: block; width: 22px; height: 2px; background: #4a5f7c; border-radius: 2px; }
+  .lip-mobile-menu { display: none; flex-direction: column; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0.75rem 1.5rem 1rem; position: sticky; top: 60px; z-index: 99; }
+  .lip-mobile-menu a { font-size: 15px; color: #4a5f7c; text-decoration: none; font-weight: 500; padding: 0.6rem 0; border-bottom: 1px solid #f3f4f6; }
+  .lip-mobile-menu a:last-child { border-bottom: none; }
+  .lip-mobile-menu.open { display: flex; }
+
+  /* HERO */
+  .lip-hero { background: #4a5f7c; padding: 2.5rem 2rem; }
+  .lip-hero-inner {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 2rem; align-items: stretch;
+    max-width: 1400px; margin: 0 auto;
+  }
+  .lip-hero-left { display: flex; flex-direction: column; justify-content: flex-start; }
+  .lip-hero-headline { font-size: 28px; font-weight: 800; color: #fff; line-height: 1.25; margin: 0 0 0.75rem; }
+  .lip-hero-copy { font-size: 14px; color: #c8d6e4; margin: 0 0 1rem; line-height: 1.6; }
+  .lip-hero-call-btn { display: inline-block; background: #fff; color: #2c3e52; font-size: 17px; font-weight: 800; padding: 12px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 1.25rem; transition: background 0.2s; }
+  .lip-hero-call-btn:hover { background: #e8edf2; }
+  .lip-hero-img { width: 100%; height: 300px; border-radius: 8px; overflow: hidden; margin-top: 1.25rem; }
+  .lip-hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .lip-hero-right { display: flex; flex-direction: column; }
+  .lip-form-card { background: #fff; border-radius: 10px; padding: 2rem; flex: 1; display: flex; flex-direction: column; }
+  .lip-form-card h1 { font-size: 24px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.6rem; line-height: 1.15; }
+  .lip-form-card > p { font-size: 15px; color: #4b5563; line-height: 1.6; margin: 0 0 1rem; }
+  .lip-form-card input { display: block; width: 100%; padding: 11px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; font-family: 'Inter', sans-serif; margin-bottom: 14px; color: #1a1a1a; }
+  .lip-form-card input:focus { outline: none; border-color: #4a5f7c; box-shadow: 0 0 0 3px rgba(74,95,124,0.15); }
+  .lip-form-trust { margin-top: auto; margin-bottom: 1rem; padding: 1rem; background: #e8edf2; border-radius: 8px; }
+  .lip-form-trust-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .lip-check { font-size: 14px; font-weight: 800; color: #4a5f7c; flex-shrink: 0; }
+  .lip-form-trust-item span { font-size: 12px; color: #4b5563; }
+  .lip-form-card button { width: 100%; padding: 12px; background: #4a5f7c; color: #fff; border: none; border-radius: 6px; font-size: 14px; font-weight: 700; font-family: 'Inter', sans-serif; cursor: pointer; transition: background 0.2s; }
+  .lip-form-card button:hover { background: #2c3e52; }
+  .lip-confirm { display: none; text-align: center; padding: 2rem 1.5rem; background: #fff; border-radius: 10px; }
+  .lip-confirm h4 { font-size: 16px; font-weight: 700; color: #4a5f7c; margin: 0 0 0.5rem; }
+  .lip-confirm p { font-size: 13px; color: #6b7280; margin: 0; }
+
+  /* BREADCRUMB */
+  .lip-breadcrumb { padding: 0.75rem 2rem; max-width: 1200px; margin: 0 auto; font-size: 12px; color: #9ca3af; }
+  .lip-breadcrumb a { color: #4a5f7c; text-decoration: none; }
+  .lip-breadcrumb a:hover { text-decoration: underline; }
+
+  /* FULL WIDTH PHOTO BANNER */
+  .lip-photo-banner { width: 100%; height: 420px; overflow: hidden; margin-bottom: 0; }
+  .lip-photo-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+
+  /* OUTCOME SECTION */
+  .lip-outcome { background: #2c3e52; padding: 2.5rem 2rem; }
+  .lip-outcome-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .lip-outcome h2 { font-size: 28px; font-weight: 800; color: #fff; margin: 0 0 1rem; line-height: 1.2; }
+  .lip-outcome p { font-size: 15px; color: #c8d6e4; line-height: 1.7; margin: 0 0 1rem; }
+  .lip-outcome p:last-child { margin: 0; }
+  .lip-outcome-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .lip-stat { background: rgba(255,255,255,0.08); border-radius: 8px; padding: 1.25rem; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+  .lip-stat strong { font-size: 32px; font-weight: 800; color: #fff; display: block; margin-bottom: 0.25rem; }
+  .lip-stat span { font-size: 12px; color: #c8d6e4; line-height: 1.4; display: block; }
+
+  /* CONTENT */
+  .lip-content { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+  .lip-content h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-content p { font-size: 14px; color: #374151; line-height: 1.7; margin: 0.75rem 0 1.5rem; }
+
+  /* SERVICES GRID */
+  .lip-services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0 2.5rem; }
+  .lip-service-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; border-top: 3px solid #4a5f7c; }
+  .lip-service-card h4 { font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 0 0 0.4rem; }
+  .lip-service-card p { font-size: 13px; color: #6b7280; margin: 0; line-height: 1.5; }
+
+  /* WHAT TO EXPECT */
+  .lip-expect { background: #e8edf2; border-radius: 10px; padding: 2rem; margin-bottom: 2.5rem; }
+  .lip-expect h2 { font-size: 20px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; }
+  .lip-expect > p { font-size: 14px; color: #374151; margin: 0.5rem 0 1.25rem; }
+  .lip-expect-list { display: flex; flex-direction: column; gap: 0.75rem; }
+  .lip-expect-item { display: flex; align-items: flex-start; gap: 1rem; background: #fff; border-radius: 8px; padding: 1rem 1.25rem; }
+  .lip-expect-num { font-size: 20px; font-weight: 800; color: #4a5f7c; flex-shrink: 0; width: 28px; }
+  .lip-expect-item h4 { font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 0 0 0.2rem; }
+  .lip-expect-item p { font-size: 13px; color: #6b7280; margin: 0; line-height: 1.5; }
+
+  /* NEIGHBORHOODS */
+  .lip-neighborhoods { margin-bottom: 2.5rem; }
+  .lip-neighborhoods h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-neighborhoods p { font-size: 14px; color: #374151; line-height: 1.7; margin: 0.75rem 0 1.25rem; }
+  .lip-neighborhood-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .lip-tag { background: #e8edf2; color: #2c3e52; font-size: 13px; font-weight: 600; padding: 0.4rem 0.85rem; border-radius: 20px; }
+
+  /* FAQ */
+  .lip-faq { background: #e8edf2; border-radius: 10px; padding: 1.5rem 2rem; margin-bottom: 2.5rem; }
+  .lip-faq h2 { font-size: 20px; font-weight: 800; color: #1a1a1a; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+  .lip-faq-item { border: 1px solid #d1d9e3; border-radius: 8px; padding: 1.25rem; background: #fff; }
+  .lip-faq-item h4 { font-size: 14px; font-weight: 700; color: #2c3e52; margin: 0 0 0.5rem; }
+  .lip-faq-item p { font-size: 13px; color: #4b5563; margin: 0; line-height: 1.6; }
+
+  /* CTA BAR */
+  .lip-cta-bar { background: #2c3e52; padding: 3rem 2rem; text-align: center; }
+  .lip-cta-bar h2 { font-size: 24px; font-weight: 800; color: #fff; margin: 0 0 0.5rem; }
+  .lip-cta-bar p { font-size: 15px; color: #c8d6e4; margin: 0 0 1.5rem; }
+  .lip-cta-bar a { display: inline-block; padding: 14px 2.5rem; background: #fff; color: #2c3e52; border-radius: 6px; font-size: 15px; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
+  .lip-cta-bar a:hover { opacity: 0.9; }
+
+  /* FOOTER */
+  .lip-footer { background: #1a1a1a; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+  .lip-footer span { font-size: 12px; color: #9ca3af; }
+  .lip-footer-links { display: flex; gap: 1.5rem; }
+  .lip-footer-links a { font-size: 12px; color: #9ca3af; text-decoration: none; }
+  .lip-footer-links a:hover { color: #fff; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .lip-nav { padding: 0 1.25rem; }
+    .lip-nav-links { display: none; }
+    .lip-hamburger { display: flex; }
+    .lip-nav-phone { font-size: 18px; }
+    .lip-hero { padding: 1.75rem 1.25rem; }
+    .lip-hero-inner { display: flex; flex-direction: column; gap: 0; }
+    .lip-hero-headline { order: 1; margin-bottom: 1rem; font-size: 22px; }
+    .lip-hero-right { order: 2; margin-bottom: 1rem; }
+    .lip-hero-copy { order: 3; margin-bottom: 1rem; }
+    .lip-hero-call-btn { order: 4; margin-bottom: 1rem; font-size: 15px; }
+    .lip-hero-img { order: 5; margin-top: 0; }
+    .lip-hero-left { display: contents; }
+    .lip-breadcrumb { padding: 0.75rem 1.25rem; }
+    .lip-photo-banner { height: 250px; }
+    .lip-outcome-inner { grid-template-columns: 1fr; }
+    .lip-content { padding: 1.75rem 1.25rem 2rem; }
+    .lip-services-grid { grid-template-columns: 1fr; }
+    .lip-faq-grid { grid-template-columns: 1fr; }
+    .lip-footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="lip-nav">
+  <div class="lip-nav-left">
+    <div class="lip-nav-phone-wrap">
+      <span class="lip-nav-phone-label">Free Estimate:</span>
+      <a href="tel:4020000000" class="lip-nav-phone">402-000-0000</a>
+    </div>
+  </div>
+  <div class="lip-nav-links">
+    <a href="/">Home</a>
+    <a href="/interior-painting-services">Interior Painting</a>
+    <a href="/residential-painting" class="active">Residential</a>
+    <a href="/cabinet-painting">Cabinet Painting</a>
+    <a href="/faq">FAQ</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <button class="lip-hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="lip-mobile-menu" id="mobileMenu">
+  <a href="/">Home</a>
+  <a href="/interior-painting-services">Interior Painting</a>
+  <a href="/residential-painting" class="active">Residential</a>
+  <a href="/cabinet-painting">Cabinet Painting</a>
+  <a href="/faq">FAQ</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+</div>
+
+<!-- HERO WITH FORM -->
+<div class="lip-hero">
+  <div class="lip-hero-inner">
+    <div class="lip-hero-left">
+      <h1 class="lip-hero-headline">Residential Painting Services in Lincoln, NE</h1>
+      <p class="lip-hero-copy">Trusted home painters serving Lincoln homeowners throughout Lancaster County. Free estimates — no pressure, no obligation.</p>
+      <a href="tel:4020000000" class="lip-hero-call-btn">📞 Call Now: 402-000-0000</a>
+      <div class="lip-hero-img">
+        <img src="images/hero-painter.jpg" alt="Licensed interior painter at work in a Lincoln, NE home" />
+      </div>
+    </div>
+    <div class="lip-hero-right">
+      <div class="lip-form-card" id="hero-form-wrap">
+        <h1>Get Your Free Estimate Today</h1>
+        <p>We respond within 2 hours. No obligation. No pressure. Just an honest quote from a local Lincoln painter.</p>
+        <input type="text" placeholder="Your name" />
+        <input type="text" placeholder="Phone number" />
+        <input type="email" placeholder="Email address" />
+        <div class="lip-form-trust">
+          <div class="lip-form-trust-item"><span class="lip-check">✓</span><span>Licensed & insured</span></div>
+          <div class="lip-form-trust-item"><span class="lip-check">✓</span><span>Free, no-obligation estimates</span></div>
+          <div class="lip-form-trust-item"><span class="lip-check">✓</span><span>Serving Lincoln & Lancaster County</span></div>
+        </div>
+        <button onclick="document.getElementById('hero-form-wrap').style.display='none';document.getElementById('hero-confirm').style.display='block'">Get My Free Estimate</button>
+      </div>
+      <div class="lip-confirm" id="hero-confirm">
+        <h4>Thank you!</h4>
+        <p>We'll be in touch shortly to schedule your free estimate.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lip-breadcrumb">
+  <a href="/">Home</a> &rsaquo; Residential Painting
+</div>
+
+<!-- FULL WIDTH PHOTO BANNER -->
+<div class="lip-photo-banner">
+  <img src="images/room-living.jpg" alt="Freshly painted living room with blue-gray walls in Lincoln, NE home" />
+</div>
+
+<!-- OUTCOME SECTION -->
+<div class="lip-outcome">
+  <div class="lip-outcome-inner">
+    <div>
+      <h2>Interior Painting for Lincoln Homes</h2>
+      <p>Your home is your biggest investment. When it's time to refresh a room, update your color scheme, or repaint your entire interior before a sale, you need painters you can trust to do the job right. Lincoln Interior Painting brings the prep work, the craftsmanship, and the cleanup that make the difference between a paint job that looks great for years and one that starts showing wear within months.</p>
+      <p>We work with homeowners throughout Lincoln — from established neighborhoods like Havelock, Belmont, and Arnold Heights to newer developments in Fallbrook, Wilderness Hills, and northwest Lincoln. No job is too small and no project is too large.</p>
+    </div>
+    <div class="lip-outcome-stats">
+      <div class="lip-stat">
+        <strong>$400</strong>
+        <span>Single room starting price</span>
+      </div>
+      <div class="lip-stat">
+        <strong>1 Day</strong>
+        <span>Typical single room completion</span>
+      </div>
+      <div class="lip-stat">
+        <strong>Free</strong>
+        <span>Written estimate, no obligation</span>
+      </div>
+      <div class="lip-stat">
+        <strong>2 hrs</strong>
+        <span>Our response time guarantee</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="lip-content">
+  <h2>Residential Painting Services We Offer</h2>
+  <p>From a single bedroom refresh to a complete whole-home repaint — we handle every scope of residential painting in Lincoln.</p>
+  <div class="lip-services-grid">
+    <div class="lip-service-card">
+      <h4>Whole-Home Interior Painting</h4>
+      <p>Complete interior repaints for Lincoln homeowners, handled efficiently and cleanly.</p>
+    </div>
+    <div class="lip-service-card">
+      <h4>Single Room Painting</h4>
+      <p>Refresh a bedroom, living room, kitchen, or bathroom without disrupting your whole home.</p>
+    </div>
+    <div class="lip-service-card">
+      <h4>Ceiling Painting</h4>
+      <p>Flat ceilings, vaulted ceilings, and textured ceiling painting throughout your home.</p>
+    </div>
+    <div class="lip-service-card">
+      <h4>Trim & Baseboard Painting</h4>
+      <p>Crisp, clean lines on all trim, baseboards, crown molding, and door casings.</p>
+    </div>
+    <div class="lip-service-card">
+      <h4>Cabinet Painting</h4>
+      <p>Transform your kitchen or bathroom cabinets for a fraction of replacement cost.</p>
+    </div>
+    <div class="lip-service-card">
+      <h4>Accent Walls</h4>
+      <p>Bold color choices executed with professional precision and clean edges.</p>
+    </div>
+  </div>
+
+  <!-- WHAT TO EXPECT -->
+  <div class="lip-expect">
+    <h2>What to Expect When You Hire Lincoln Interior Painting</h2>
+    <p>We make the process easy from start to finish. Here's how it works.</p>
+    <div class="lip-expect-list">
+      <div class="lip-expect-item">
+        <div class="lip-expect-num">1</div>
+        <div>
+          <h4>Free Estimate</h4>
+          <p>We visit your home, walk through the project, and provide a written quote at no charge.</p>
+        </div>
+      </div>
+      <div class="lip-expect-item">
+        <div class="lip-expect-num">2</div>
+        <div>
+          <h4>Color Consultation</h4>
+          <p>Not sure what color to choose? We'll help you think through options for your space.</p>
+        </div>
+      </div>
+      <div class="lip-expect-item">
+        <div class="lip-expect-num">3</div>
+        <div>
+          <h4>Careful Prep Work</h4>
+          <p>We protect floors, furniture, and fixtures before a single drop of paint is applied.</p>
+        </div>
+      </div>
+      <div class="lip-expect-item">
+        <div class="lip-expect-num">4</div>
+        <div>
+          <h4>Clean Execution</h4>
+          <p>Our painters work cleanly and efficiently, minimizing disruption to your daily routine.</p>
+        </div>
+      </div>
+      <div class="lip-expect-item">
+        <div class="lip-expect-num">5</div>
+        <div>
+          <h4>Final Walkthrough</h4>
+          <p>We walk through the completed project with you before we consider the job done.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEIGHBORHOODS -->
+  <div class="lip-neighborhoods">
+    <h2>Serving Residential Customers Throughout Lincoln, NE</h2>
+    <p>Lincoln Interior Painting provides residential painting services throughout Lincoln and the surrounding Lancaster County area, including Waverly, Hickman, Bennet, Cheney, Firth, Hallam, Martell, and Sprague. Whether you're in South Lincoln, East Lincoln, the Haymarket district, or the newer subdivisions in northwest Lincoln — we're ready to help.</p>
+    <div class="lip-neighborhood-tags">
+      <span class="lip-tag">Havelock</span>
+      <span class="lip-tag">Belmont</span>
+      <span class="lip-tag">Arnold Heights</span>
+      <span class="lip-tag">Fallbrook</span>
+      <span class="lip-tag">Wilderness Hills</span>
+      <span class="lip-tag">South Lincoln</span>
+      <span class="lip-tag">East Lincoln</span>
+      <span class="lip-tag">Haymarket</span>
+      <span class="lip-tag">Northwest Lincoln</span>
+      <span class="lip-tag">Waverly</span>
+      <span class="lip-tag">Hickman</span>
+      <span class="lip-tag">Bennet</span>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="lip-faq">
+    <h2>Frequently Asked Questions About Residential Painting</h2>
+    <div class="lip-faq-grid">
+      <div class="lip-faq-item">
+        <h4>How much does residential painting cost in Lincoln, NE?</h4>
+        <p>Most residential interior painting projects in Lincoln range from $1,500 to $8,000 depending on the size of the home, number of rooms, ceiling height, and the condition of existing walls. Single rooms typically start around $400. We provide free, no-obligation estimates so you know exactly what to expect.</p>
+      </div>
+      <div class="lip-faq-item">
+        <h4>How do I prepare my home for interior painters?</h4>
+        <p>We ask that you clear small items and valuables from the rooms being painted. Our crew will move larger furniture to the center of the room and cover everything with drop cloths. You don't need to do much — we handle the prep.</p>
+      </div>
+      <div class="lip-faq-item">
+        <h4>Are your painters licensed and insured?</h4>
+        <p>Yes. Lincoln Interior Painting is fully licensed and insured. Every job is covered so you never have to worry about liability or property damage.</p>
+      </div>
+      <div class="lip-faq-item">
+        <h4>How long will my residential painting project take?</h4>
+        <p>A single room typically takes one day. A whole-home interior usually takes three to five days depending on the scope of work. We'll give you a clear timeline before we start.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="lip-cta-bar">
+  <h2>Get a Free Residential Painting Estimate in Lincoln</h2>
+  <p>Ready to transform your home? Call us or fill out our contact form — we respond within 2 hours.</p>
+  <a href="tel:4020000000">402-000-0000 — Call Now</a>
+</div>
+
+<footer class="lip-footer">
+  <span>© 2026 Lincoln Interior Painting</span>
+  <div class="lip-footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  document.addEventListener('click', function(e) {
+    var menu = document.getElementById('mobileMenu');
+    var hamburger = document.querySelector('.lip-hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
+
+</body>
+</html>

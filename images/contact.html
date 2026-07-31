@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Lincoln Interior Painting | Free Painting Estimates</title>
+<meta name="description" content="Contact Lincoln Interior Painting to request a free estimate. Serving homeowners throughout Lincoln, NE and Lancaster County. Call or fill out our form today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #fff; }
+
+  /* NAV */
+  .lip-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; border-bottom: 1px solid #e5e7eb; background: #fff; position: sticky; top: 0; z-index: 100; }
+  .lip-nav-left { display: flex; align-items: center; gap: 1.5rem; }
+  .lip-nav-phone-wrap { display: flex; flex-direction: column; line-height: 1.1; }
+  .lip-nav-phone-label { font-size: 11px; font-weight: 600; color: #8aa4be; text-transform: uppercase; letter-spacing: 0.05em; }
+  .lip-nav-phone { font-size: 26px; font-weight: 800; color: #4a5f7c; text-decoration: none; white-space: nowrap; }
+  .lip-nav-phone:hover { color: #2c3e52; }
+  .lip-nav-links { display: flex; gap: 0; align-items: center; }
+  .lip-nav-links a { font-size: 13px; color: #4a5f7c; text-decoration: none; font-weight: 500; padding: 0.5rem 0.85rem; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+  .lip-nav-links a:hover { background: #e8edf2; color: #2c3e52; }
+  .lip-nav-links a.active { background: #e8edf2; color: #2c3e52; font-weight: 700; }
+  .lip-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; border: none; background: none; }
+  .lip-hamburger span { display: block; width: 22px; height: 2px; background: #4a5f7c; border-radius: 2px; }
+  .lip-mobile-menu { display: none; flex-direction: column; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0.75rem 1.5rem 1rem; position: sticky; top: 60px; z-index: 99; }
+  .lip-mobile-menu a { font-size: 15px; color: #4a5f7c; text-decoration: none; font-weight: 500; padding: 0.6rem 0; border-bottom: 1px solid #f3f4f6; }
+  .lip-mobile-menu a:last-child { border-bottom: none; }
+  .lip-mobile-menu.open { display: flex; }
+
+  /* HERO — no form on contact page, full width */
+  .lip-hero { background: #4a5f7c; padding: 2.5rem 2rem; }
+  .lip-hero-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .lip-hero-headline { font-size: 32px; font-weight: 800; color: #fff; line-height: 1.2; margin: 0 0 1rem; }
+  .lip-hero-copy { font-size: 15px; color: #c8d6e4; line-height: 1.7; margin: 0 0 1.5rem; }
+  .lip-hero-contact-options { display: flex; flex-direction: column; gap: 1rem; }
+  .lip-hero-phone-block { background: rgba(255,255,255,0.1); border-radius: 10px; padding: 1.25rem 1.5rem; border: 1px solid rgba(255,255,255,0.15); }
+  .lip-hero-phone-block span { font-size: 12px; color: #8aa4be; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; display: block; margin-bottom: 0.25rem; }
+  .lip-hero-phone-block a { font-size: 28px; font-weight: 800; color: #fff; text-decoration: none; display: block; }
+  .lip-hero-phone-block a:hover { color: #e8edf2; }
+  .lip-hero-phone-block p { font-size: 13px; color: #c8d6e4; margin-top: 0.25rem; }
+  .lip-hero-img { height: 320px; border-radius: 10px; overflow: hidden; }
+  .lip-hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+  /* BREADCRUMB */
+  .lip-breadcrumb { padding: 0.75rem 2rem; max-width: 1200px; margin: 0 auto; font-size: 12px; color: #9ca3af; }
+  .lip-breadcrumb a { color: #4a5f7c; text-decoration: none; }
+  .lip-breadcrumb a:hover { text-decoration: underline; }
+
+  /* CONTACT LAYOUT */
+  .lip-contact { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+  /* FORM SIDE */
+  .lip-contact-form-wrap { margin-bottom: 3rem; }
+  .lip-contact-form-wrap h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-contact-form-wrap > p { font-size: 14px; color: #374151; line-height: 1.7; margin: 0.75rem 0 1.5rem; }
+
+  .lip-form { display: flex; flex-direction: column; gap: 1rem; }
+  .lip-form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+  .lip-form-group label { font-size: 13px; font-weight: 600; color: #374151; }
+  .lip-form-group input,
+  .lip-form-group textarea { padding: 11px 14px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; font-family: 'Inter', sans-serif; color: #1a1a1a; width: 100%; transition: border-color 0.15s, box-shadow 0.15s; }
+  .lip-form-group input:focus,
+  .lip-form-group textarea:focus { outline: none; border-color: #4a5f7c; box-shadow: 0 0 0 3px rgba(74,95,124,0.15); }
+  .lip-form-group textarea { height: 140px; resize: vertical; }
+  .lip-form-submit { padding: 14px; background: #4a5f7c; color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 700; font-family: 'Inter', sans-serif; cursor: pointer; transition: background 0.2s; width: 100%; }
+  .lip-form-submit:hover { background: #2c3e52; }
+  .lip-form-note { font-size: 12px; color: #9ca3af; text-align: center; margin-top: 0.5rem; }
+
+  .lip-form-success { display: none; background: #e8edf2; border-radius: 10px; padding: 2rem; text-align: center; border: 2px solid #4a5f7c; }
+  .lip-form-success h3 { font-size: 20px; font-weight: 800; color: #2c3e52; margin: 0 0 0.5rem; }
+  .lip-form-success p { font-size: 14px; color: #374151; margin: 0; line-height: 1.6; }
+
+  /* INFO SIDE */
+  .lip-contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .lip-contact-info h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+
+  .lip-info-card { background: #e8edf2; border-radius: 10px; padding: 1.5rem; }
+  .lip-info-card h4 { font-size: 13px; font-weight: 700; color: #4a5f7c; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.5rem; }
+  .lip-info-card p { font-size: 14px; color: #374151; line-height: 1.6; margin: 0; }
+  .lip-info-card a { color: #2c3e52; font-weight: 700; text-decoration: none; font-size: 22px; display: block; margin-top: 0.25rem; }
+  .lip-info-card a:hover { text-decoration: underline; }
+
+  .lip-response-promise { background: #2c3e52; border-radius: 10px; padding: 1.5rem; }
+  .lip-response-promise h4 { font-size: 13px; font-weight: 700; color: #8aa4be; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.5rem; }
+  .lip-response-promise p { font-size: 14px; color: #c8d6e4; line-height: 1.6; margin: 0; }
+  .lip-response-promise strong { color: #fff; }
+
+  .lip-trust-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .lip-trust-list-item { display: flex; align-items: center; gap: 0.75rem; font-size: 14px; color: #374151; }
+  .lip-check { font-size: 14px; font-weight: 800; color: #4a5f7c; flex-shrink: 0; }
+
+  /* SERVICE AREA MAP PLACEHOLDER */
+  .lip-map { max-width: 1200px; margin: 0 auto; padding: 0 2rem 2.5rem; }
+  .lip-map h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-map p { font-size: 14px; color: #374151; line-height: 1.7; margin: 0.75rem 0 1.25rem; }
+  .lip-map-placeholder { width: 100%; height: 300px; background: #e8edf2; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .lip-map-placeholder span { font-size: 13px; color: #9ca3af; }
+
+  /* FOOTER */
+  .lip-footer { background: #1a1a1a; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+  .lip-footer span { font-size: 12px; color: #9ca3af; }
+  .lip-footer-links { display: flex; gap: 1.5rem; }
+  .lip-footer-links a { font-size: 12px; color: #9ca3af; text-decoration: none; }
+  .lip-footer-links a:hover { color: #fff; }
+
+  .lip-contact-info h2 { font-size: 22px; font-weight: 800; color: #1a1a1a; margin: 0 0 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #4a5f7c; display: inline-block; }
+  .lip-contact-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .lip-nav { padding: 0 1.25rem; }
+    .lip-nav-links { display: none; }
+    .lip-hamburger { display: flex; }
+    .lip-nav-phone { font-size: 18px; }
+    .lip-hero { padding: 1.75rem 1.25rem; }
+    .lip-hero-inner { grid-template-columns: 1fr; }
+    .lip-hero-img { height: 220px; }
+    .lip-breadcrumb { padding: 0.75rem 1.25rem; }
+    .lip-contact { padding: 1.75rem 1.25rem; }
+    .lip-contact-info-grid { grid-template-columns: 1fr; }
+    .lip-map { padding: 0 1.25rem 2rem; }
+    .lip-footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="lip-nav">
+  <div class="lip-nav-left">
+    <div class="lip-nav-phone-wrap">
+      <span class="lip-nav-phone-label">Free Estimate:</span>
+      <a href="tel:4020000000" class="lip-nav-phone">402-000-0000</a>
+    </div>
+  </div>
+  <div class="lip-nav-links">
+    <a href="/">Home</a>
+    <a href="/interior-painting-services">Interior Painting</a>
+    <a href="/residential-painting">Residential</a>
+    <a href="/cabinet-painting">Cabinet Painting</a>
+    <a href="/faq">FAQ</a>
+    <a href="/about">About</a>
+    <a href="/contact" class="active">Contact</a>
+  </div>
+  <button class="lip-hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="lip-mobile-menu" id="mobileMenu">
+  <a href="/">Home</a>
+  <a href="/interior-painting-services">Interior Painting</a>
+  <a href="/residential-painting">Residential</a>
+  <a href="/cabinet-painting">Cabinet Painting</a>
+  <a href="/faq">FAQ</a>
+  <a href="/about">About</a>
+  <a href="/contact" class="active">Contact</a>
+</div>
+
+<!-- HERO — no form, full width with contact options -->
+<div class="lip-hero">
+  <div class="lip-hero-inner">
+    <div>
+      <h1 class="lip-hero-headline">Contact Lincoln Interior Painting</h1>
+      <p class="lip-hero-copy">Ready to get a free estimate on your interior painting project? Fill out the form below or call us directly at 402-000-0000. We serve homeowners throughout Lincoln, NE and the surrounding Lancaster County area. We'll get back to you promptly to discuss your project and schedule a time to provide your free estimate.</p>
+      <div class="lip-hero-contact-options">
+        <div class="lip-hero-phone-block">
+          <span>Call us directly</span>
+          <a href="tel:4020000000">402-000-0000</a>
+          <p>We respond within 2 hours</p>
+        </div>
+      </div>
+    </div>
+    <div class="lip-hero-img">
+      <img src="images/hero-painter.jpg" alt="Licensed interior painter at work in a Lincoln, NE home" />
+    </div>
+  </div>
+</div>
+
+<div class="lip-breadcrumb">
+  <a href="/">Home</a> &rsaquo; Contact
+</div>
+
+<!-- CONTACT LAYOUT -->
+<div class="lip-contact">
+
+  <!-- FORM - full width single column -->
+  <div class="lip-contact-form-wrap">
+    <h2>Request a Free Estimate</h2>
+    <p>Fill out the form and we'll be in touch within 2 hours to discuss your project and schedule your free, no-obligation estimate.</p>
+
+    <form class="lip-form" name="contact" method="POST" netlify netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;"><input name="bot-field" /></p>
+
+      <div class="lip-form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" placeholder="First and last name" required />
+      </div>
+      <div class="lip-form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="(402) 000-0000" required />
+      </div>
+      <div class="lip-form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" />
+      </div>
+      <div class="lip-form-group">
+        <label for="message">Tell Us About Your Project</label>
+        <textarea id="message" name="message" placeholder="Which rooms need painting? Any special requirements?"></textarea>
+      </div>
+
+      <button type="submit" class="lip-form-submit">Request My Free Estimate</button>
+      <p class="lip-form-note">We respond within 2 hours. No obligation, no pressure.</p>
+    </form>
+
+    <div class="lip-form-success" id="formSuccess">
+      <h3>Thank You!</h3>
+      <p>We've received your request and will be in touch within 2 hours to schedule your free estimate. If you need to reach us sooner, call us at <strong>402-000-0000</strong>.</p>
+    </div>
+  </div>
+
+  <!-- INFO SECTION - two columns -->
+  <div class="lip-contact-info">
+    <h2>Get in Touch</h2>
+    <div class="lip-contact-info-grid">
+
+      <div class="lip-info-card">
+        <h4>Phone</h4>
+        <p>Call us directly for the fastest response.</p>
+        <a href="tel:4020000000">402-000-0000</a>
+      </div>
+
+      <div class="lip-info-card">
+        <h4>Email</h4>
+        <p>Prefer email? Reach us at:</p>
+        <a href="mailto:info@lincolninteriorpainting.com" style="font-size:16px;">info@lincolninteriorpainting.com</a>
+      </div>
+
+      <div class="lip-response-promise">
+        <h4>Our Response Promise</h4>
+        <p>We respond to every inquiry within <strong>2 hours</strong> during business hours. Submit your request anytime — we'll follow up promptly to schedule your free, no-obligation estimate.</p>
+      </div>
+
+      <div class="lip-info-card">
+        <h4>Why Choose Us</h4>
+        <div class="lip-trust-list">
+          <div class="lip-trust-list-item"><span class="lip-check">✓</span>Licensed & insured</div>
+          <div class="lip-trust-list-item"><span class="lip-check">✓</span>Free, no-obligation estimates</div>
+          <div class="lip-trust-list-item"><span class="lip-check">✓</span>Local to Lincoln, NE</div>
+          <div class="lip-trust-list-item"><span class="lip-check">✓</span>Satisfaction guaranteed</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- SERVICE AREA -->
+<div class="lip-map">
+  <h2>Serving Lincoln, NE & Surrounding Areas</h2>
+  <p>Lincoln Interior Painting provides interior painting services throughout Lincoln and the greater Lancaster County area, including Waverly, Hickman, Bennet, Cheney, Firth, Hallam, Martell, and Sprague.</p>
+  <div class="lip-map-placeholder">
+    <span>Service area map</span>
+  </div>
+</div>
+
+<footer class="lip-footer">
+  <span>© 2026 Lincoln Interior Painting</span>
+  <div class="lip-footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  document.addEventListener('click', function(e) {
+    var menu = document.getElementById('mobileMenu');
+    var hamburger = document.querySelector('.lip-hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.querySelector('.lip-form').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
