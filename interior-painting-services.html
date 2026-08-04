@@ -34,11 +34,11 @@
   .lip-mobile-menu.open { display: flex; }
 
   /* INNER PAGE HERO */
-  .lip-inner-hero {
+  .lip-hero {
     background: #4a5f7c;
     padding: 2.5rem 2rem;
   }
-  .lip-inner-hero-inner {
+  .lip-hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -46,20 +46,15 @@
     max-width: 1400px;
     margin: 0 auto;
   }
-  .lip-inner-hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-  }
-  .lip-inner-hero-headline {
+  .lip-hero-left { display: flex; flex-direction: column; justify-content: flex-start; }
+  .lip-hero-headline {
     font-size: 28px;
     font-weight: 800;
     color: #fff;
     line-height: 1.25;
     margin: 0 0 0.75rem;
   }
-  .lip-inner-hero-copy {
+  .lip-hero-copy {
     font-size: 14px;
     color: #c8d6e4;
     margin: 0 0 1rem;
@@ -78,7 +73,7 @@
     transition: background 0.2s, color 0.2s;
   }
   .lip-hero-call-btn:hover { background: #e8edf2; color: #2c3e52; }
-  .lip-inner-hero-right {
+  .lip-hero-right {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -278,7 +273,7 @@
   .lip-footer-links a { font-size: 12px; color: #9ca3af; text-decoration: none; }
   .lip-footer-links a:hover { color: #fff; }
 
-  .lip-inner-hero-img {
+  .lip-hero-img {
     width: 100%;
     flex: 1;
     min-height: 220px;
@@ -287,7 +282,7 @@
     margin-top: 1.25rem;
     display: flex;
   }
-  .lip-inner-hero-img img {
+  .lip-hero-img img {
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center center;
@@ -295,7 +290,7 @@
     border-radius: 8px;
   }
 
-  .lip-inner-hero-right {
+  .lip-hero-right {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -307,14 +302,14 @@
     .lip-nav-links { display: none; }
     .lip-hamburger { display: flex; }
     .lip-nav-phone { font-size: 18px; }
-    .lip-inner-hero { padding: 1.75rem 1.25rem; }
-    .lip-inner-hero-inner { grid-template-columns: 1fr; gap: 0; display: flex; flex-direction: column; }
-    .lip-inner-hero-headline { font-size: 22px; order: 1; margin-bottom: 1rem; }
-    .lip-inner-hero-right { order: 2; margin-bottom: 1rem; }
-    .lip-inner-hero-copy { order: 3; margin-bottom: 1rem; }
+    .lip-hero { padding: 1.75rem 1.25rem; }
+    .lip-hero-inner { grid-template-columns: 1fr; gap: 0; display: flex; flex-direction: column; }
+    .lip-hero-headline { font-size: 22px; order: 1; margin-bottom: 1rem; }
+    .lip-hero-right { order: 2; margin-bottom: 1rem; }
+    .lip-hero-copy { order: 3; margin-bottom: 1rem; }
     .lip-hero-call-btn { order: 4; margin-bottom: 1rem; font-size: 15px; }
-    .lip-inner-hero-left { display: contents; }
-    .lip-inner-hero-img { order: 5; margin-top: 0; }
+    .lip-hero-left { display: contents; }
+    .lip-hero-img { order: 5; margin-top: 0; }
     .lip-breadcrumb { padding: 0.75rem 1.25rem; }
     .lip-content { padding: 0 1.25rem 2rem; }
     .lip-intro-grid { grid-template-columns: 1fr; }
@@ -360,17 +355,17 @@
   <a href="/contact">Contact</a>
 </div>
 
-<div class="lip-inner-hero">
-  <div class="lip-inner-hero-inner">
-    <div class="lip-inner-hero-left">
-      <h1 class="lip-inner-hero-headline">Interior Painting Services in Lincoln, NE</h1>
-      <p class="lip-inner-hero-copy">Licensed, insured interior painters serving Lincoln homeowners and Lancaster County communities. Free estimates — no pressure, no obligation.</p>
+<div class="lip-hero">
+  <div class="lip-hero-inner">
+    <div class="lip-hero-left">
+      <h1 class="lip-hero-headline">Interior Painting Services in Lincoln, NE</h1>
+      <p class="lip-hero-copy">Licensed, insured interior painters serving Lincoln homeowners and Lancaster County communities. Free estimates — no pressure, no obligation.</p>
       <a href="tel:4020000000" class="lip-hero-call-btn">📞 Call Now: 402-000-0000</a>
-      <div class="lip-inner-hero-img">
+      <div class="lip-hero-img">
         <img src="/images/hero-painter.jpg" alt="Licensed interior painter at work in a Lincoln, NE home" />
       </div>
     </div>
-    <div class="lip-inner-hero-right">
+    <div class="lip-hero-right">
       <div class="lip-form-card" id="hero-form-wrap">
         <img src="/images/free-quote.jpg" alt="Get Your Free Estimate Today" style="width:100%;max-width:520px;height:auto;display:block;margin-bottom:0.5rem;" />
 <p>We respond within 2 hours. No obligation. No pressure. Just an honest quote from a local Lincoln painter.</p>
